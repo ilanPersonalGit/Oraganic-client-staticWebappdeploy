@@ -9,6 +9,9 @@ trigger:
 pool:
   name: ownpool
   vmImage: linuxagent
+  
+  variables:
+- group: deploymenttoken
 
 steps:
 - task: NodeTool@0
